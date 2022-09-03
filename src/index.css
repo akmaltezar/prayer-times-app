@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-family: "Figtree", sans-serif;
+  background: #f2f3f4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: "Figtree", sans-serif;
+}

@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap");
+
+.header {
+  background: #344e41;
+  color: #f2f3f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+}
+
+.header h2 {
+  margin-left: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: calc(100vh - 50px);
+  max-width: 480px;
+  padding: 16px;
+  margin: 0 auto;
+  background-color: #dad7cd;
+}
+.wrapper {
+  display: flex;
+  width: 86%;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background: #f2f3f4;
+  color: #3a5a40;
+  border: #bebebe 1px solid;
+  border-radius: 15px;
+  box-shadow: 1px 1px #bebebe;
+  margin: 5px 0 10px 0;
+}
+.date {
+  display: flex;
+  font-size: 1.2rem;
+}
+.table {
+  display: flex;
+  flex-direction: row;
+}
+.timeWrapperNight {
+  display: flex;
+  justify-content: space-around;
+  padding: 2px 2px;
+  background: url(../../assets/night.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 20%;
+  border: #bebebe 1px solid;
+  border-radius: 15px;
+  width: 86%;
+  margin: 2px 0 2px 0;
+  color: #f1faee;
+  font-weight: 700;
+}
+.timeWrapperSun {
+  display: flex;
+  justify-content: space-around;
+  padding: 2px 2px;
+  background: url(../../assets/sun.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 50%;
+  border: #bebebe 1px solid;
+  border-radius: 15px;
+  width: 86%;
+  margin: 2px 0 2px 0;
+  font-weight: 700;
+}
+.timeWrapperSky {
+  display: flex;
+  justify-content: space-around;
+  padding: 2px 2px;
+  background: url(../../assets/sky.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-y: 20%;
+  border: #bebebe 1px solid;
+  border-radius: 15px;
+  width: 86%;
+  margin: 2px 0 2px 0;
+  font-weight: 700;
+}
