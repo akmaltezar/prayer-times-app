@@ -23,6 +23,17 @@
   margin: 0 auto;
   background-color: #dad7cd;
 }
+.container button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Figtree", sans-serif;
+}
+.container button:active {
+  background: #dad7cd;
+}
 .wrapper {
   display: flex;
   width: 86%;

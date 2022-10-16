@@ -23,7 +23,6 @@ const Main = () => {
   }
 
   function success(position) {
-    console.log(position.coords);
     setLatitude(position.coords.latitude);
     setLongitude(position.coords.longitude);
   }
@@ -45,11 +44,10 @@ const Main = () => {
       `https://api.aladhan.com/v1/calendar?latitude=${latitude}&longitude=${longitude}&method=4`
     )
       .then((response) => response.json())
-      .then(function (response) {
-        setTimes(response.data[date - 1].timings);
-        setDay(response.data[date - 1].date.gregorian.weekday);
-        setFullDate(response.data[date - 1].date.readable);
-        console.log(response.data[date - 1]);
+      .then((result) => {
+        setTimes(result.data[date - 1].timings);
+        setDay(result.data[date - 1].date.gregorian.weekday);
+        setFullDate(result.data[date - 1].date.readable);
       })
       .catch((error) => console.log(error));
   }
@@ -61,10 +59,6 @@ const Main = () => {
     getLocation();
   }, []);
 
-  useEffect(() => {
-    getTimes();
-  }, [date]);
-
   return (
     <Layout>
       <Header className="header">
@@ -73,6 +67,7 @@ const Main = () => {
       </Header>
       <Content>
         <div className="container">
+          <button onClick={() => getTimes()}>Lihat Jadwal</button>
           <div className="wrapper">
             <IoChevronBack size={30} onClick={() => setDate(date - 1)} />
             <div className="date">
